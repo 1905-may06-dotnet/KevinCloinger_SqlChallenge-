@@ -26,7 +26,7 @@ INSERT INTO EmpDetails(Employee_ID,Salary,Address_1,Address_2,city,state,Country
 INSERT INTO EmpDetails(Employee_ID,Salary,Address_1,Address_2,city,state,Country) VALUES(2,50000.00,'2 place','apt 34','Denver','CO','US');
 INSERT INTO EmpDetails(Employee_ID,Salary,Address_1,Address_2,city,state,Country) VALUES(3,40000.00,'3 way', 'apt 67','Aurora','CO','US');
 
-SELECT [FirstName.Employee] [Name.Department] from Employee
+SELECT [FirstName.Employee], [Name.Department] from Employee
 Join Department ON Department.ID=Employee.Dept_ID
 where [Name.Department]='Marking';
 
